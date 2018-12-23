@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blob Maze</title>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, minimal-ui, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	
+	<script type="text/javascript" src="lib/impact/impact.js"></script>
+	<script type="text/javascript" src="lib/game/main.js"></script>
+</head>
+
+<body id="xibalba" class="desktop webgl">
+	<div class="panel desktop-only">
+		<h1>
+			LABIRIN MONSTER BLOB
+		</h1>
+		<p>Seorang Ilmuwan tidak sengaja membuka portal dimensi lain di planet Blob, mampukah ilmuan tersebut memperbaiki masalahnya? Mainkan sekarang!</p>
+	</div>
+
+	<div id="game" class="webgl-only">
+		<canvas id="canvas" class="landscape-only"></canvas>
+
+		<div id="rotate-to-play" class="mobile-only portrait-only">
+			<div><img src="media/rotate.png"/></div>
+			Putar handphone untuk memulai!
+		</div>
+
+		<div class="panel desktop-only">
+			<div class="option">
+				<input type="checkbox" id="requestFullscreen"/>
+				<label for="requestFullscreen"><span></span>Layar penuh</label>
+			</div>
+			<div class="option">
+				<input type="checkbox" id="riftStereoMode" hidden="true"/>
+				<label for="riftStereoMode" hidden="true"><span></span>Oculus Rift DK2 Stereo Rendering</label>
+				 <a hidden="true" href="http://blog.tojicode.com/2014/07/bringing-vr-to-chrome.html">Chrome WebVR Build</a>
+			</div>			
+		</div>		
+	</div>
+
+	<div class="no-webgl-only">
+		<div id="no-webgl-notice" class="panel">
+			<p>
+				Maaf, browser Anda tidak mendukung WebGL. Coba menggunakan  
+				<a href="http://www.google.com/chrome">Chrome</a> atau
+				<a href="http://www.mozilla.com/firefox/">Firefox</a>.
+			</p>
+			<p>
+				Mobile Safari mendukung WebGL pada iOS 8
+			</p>
+		</div>
+	</div>
+
+</body>
+</html>
