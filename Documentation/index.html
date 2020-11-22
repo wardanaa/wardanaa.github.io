@@ -1,0 +1,1860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>ikonik Documentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ikonik Documentation">
+  <meta name="author" content="Pixelwars">
+
+  <!-- styles -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/pixelwars.css">
+  <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+  <!-- FAV and TOUCH ICONS -->
+  <link rel="shortcut icon" href="assets/ico/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/ico/apple-touch-icon.png" />
+</head>
+
+
+
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+  <!-- Subhead
+    ================================================== -->
+  <header class="jumbotron subhead" id="overview">
+    <div class="container">
+      <h1>ikonik<small>Documentation</small></h1>
+      <p class="lead">Overview of the template, its contents, and how to get started with the template.</p>
+      <img src="assets/img/stamp.png" alt="pixelwars logo" />
+    </div>
+  </header>
+  <!-- Subhead
+    ================================================== -->
+
+  <!-- CONTAINER -->
+  <div class="container">
+    <!-- ROW -->
+    <div class="row">
+
+      <!-- Docs nav
+      ================================================== -->
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+          <li><a href="#introduction">Introduction</a></li>
+          <li class="dropdown"><a href="#getting-started">Getting Started</a>
+            <ul class="nav nav-list sub-nav">
+              <li><a href="#file-structure">File Structure</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#html">HTML</a>
+            <ul class="nav nav-list sub-nav">
+              <li><a href="#head">Head</a></li>
+              <li><a href="#layout">Layout</a></li>
+              <li><a href="#grid">Grid</a></li>
+              <li><a href="#icons">Icons</a></li>
+              <li><a href="#about-me">About Me</a></li>
+              <li><a href="#resume">Resume</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#portfolio-single">Portfolio Single</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#css">CSS</a></li>
+          <li class="dropdown"><a href="#javascript">Javascript</a> </li>
+          <li class="dropdown"><a href="#customization">Customization</a>
+            <ul class="nav nav-list sub-nav">
+              <li><a href="#custom-css">Custom CSS</a></li>
+              <li><a href="#fonts">Fonts</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#credits">Credits</a></li>
+        </ul>
+      </div>
+      <!-- Docs nav
+      ================================================== -->
+
+      <!-- CONTENT -->
+      <div class="span9">
+
+        <!-- INTRODUCTION
+        ================================================== -->
+        <section id="introduction">
+          <div class="page-header">
+            <h1>Introduction<small>a quick introduction</small></h1>
+          </div>
+
+          <!--row fluid-->
+          <div class="row-fluid">
+            <div class="span8">
+              <div class="page-header">
+                <h4>created : <small>Nov 2019</small></h4>
+              </div>
+            </div>
+            <div class="span4">
+              <div class="page-header">
+                <h4>by <a href="http://themeforest.net/user/pixelwars" target="_blank">pixelwars</a></h4>
+              </div>
+            </div>
+          </div>
+          <!--row fluid-->
+
+          <!--thanks-->
+          <blockquote>
+            <p class="lead">Thank you for purchasing our template. If you have any questions that are beyond the scope
+              of this help file, you can sign up to our support forums with your purchase code and start a ticket, and
+              please rate the template on themeforest if you liked it. Thanks so much!</p>
+            <cite class="muted" title="Source Title"> - Pixelwars Team</cite>
+          </blockquote>
+          <!--thanks-->
+
+          <!--row fluid-->
+          <div class="row-fluid">
+            <div class="span4">
+              <h3>Support Forums</h3>
+              <p>Any questions that are beyond the scope of this help file, use <span class="highlight">support
+                  forums</span>.</p>
+              <p><a class="btn btn-large" href="http://www.pixelwars.org/forums/" target="_blank">Visit Support
+                  Forums</a></p>
+            </div>
+            <div class="span4">
+              <h3>Follow us</h3>
+              <p>Follow us on themeforest and don't miss new upcoming premium themes.</p>
+              <p><a class="btn btn-large" href="http://themeforest.net/user/pixelwars/follow" target="_blank">Follow us
+                  on themeforest</a></p>
+            </div>
+            <div class="span4">
+              <h3>Rate The Theme</h3>
+              <p>If you liked the theme you can rate it on themeforest in your downloads menu.</p>
+              <p><a class="btn btn-large btn-success" href="https://themeforest.net/downloads" target="_blank">Rate on
+                  themeforest</a></p>
+            </div>
+          </div>
+          <!--row fluid-->
+
+        </section>
+        <!-- INTRODUCTION
+        ================================================== -->
+
+        <!-- GETTING STARTED
+        ================================================== -->
+        <section id="getting-started">
+          <div class="page-header">
+            <h1>Getting Started<small>things to know before get started</small></h1>
+          </div>
+          <p class="lead">We assume you have basic knowledge of HTML / CSS and JS. In this doc you will not learn how to
+            code but you will learn how to setup, use and customize the theme. Before you begin make sure you have a
+            code editor, you can use Dreamweaver or any other editor like <a href="http://notepad-plus-plus.org/"
+              target="_blank">Notepad++</a> will be enough.</p>
+
+          <!-- FILE STRUCTURE
+            ================================================== -->
+          <div id="file-structure" class="sub-section">
+            <div class="page-header">
+              <h2>File structure</h2>
+            </div>
+            <p class="lead">Within the download you'll find the following file structure, logically groupped common
+              assets.</p>
+            <p>There are two project folders in the the downloaded package, one contains Dreamweaver Template and other
+              one contains Plain Html template.</p>
+            <p>Once downloaded, unzip the compressed folder to see the structure of th theme. You'll see something like
+              this:</p>
+            <pre class="prettyprint">
+  ikonik/
+  ├── audio/
+  ├── css/
+  ├── images/
+  ├── js/
+  ├── Templates/
+  └── index.html
+  └── other html files
+</pre>
+            <p>If you have Dreamweaver, and you are going to build a static html site with this template you can benefit
+              template files in "Templates" folder. Template files includes layout markup shared by all pages, and once
+              you have updated a template all pages that inherits that template are automatically updated. For example
+              if you create a new site in Dreamweaver, then copy all project files to this site folder, then open
+              "layout.dwt" under "Templates/" folder and update some parts in the markup in "layout.dwt", when you save
+              it, all pages' markup will be updated. Check out this <a target="_blank"
+                href="http://www.thesitewizard.com/gettingstarted/dreamweaver5.shtml">article</a> for more about
+              Dreamweaver templates. Here are the Dreamweaver template files in this project;</p>
+
+            <ul>
+              <li><strong>layout.dwt</strong> Includes general layout markup shared by all pages.</li>
+            </ul>
+          </div>
+          <!-- FILE STRUCTURE
+            ================================================== -->
+
+        </section>
+        <!-- GETTING STARTED
+        ================================================== -->
+
+        <!-- HTML
+        ================================================== -->
+        <section id="html">
+          <div class="page-header">
+            <h1>HTML<small>html structure and layout</small></h1>
+          </div>
+          <p class="lead">In this template you will find all HTML files in well formatted and highly commented. Most of
+            the markup is self explanatory with comments. So i will only explain the parts where the markup needs more
+            attention.</p>
+
+          <h3>Doctype</h3>
+          <p>Uses plain HTML5 Doctype</p>
+          <pre class="prettyprint linenums">
+&lt;!DOCTYPE html&gt;</pre>
+          <h3>Html tag</h3>
+          <p>html tag with custom html5 data attributes for easy customizing. You can learn more about in <a
+              href="#customization">customization section</a></p>
+          <pre
+            class="prettyprint linenums">&lt;html lang=&quot;en&quot; class=&quot;no-js one-page-layout sound-effects&quot; data-audio-tick=&quot;audio/tick.mp3&quot; data-click-ripple-animation=&quot;yes&quot;&gt;</pre>
+
+          <!-- HEAD
+            ================================================== -->
+          <div id="head" class="sub-section">
+            <div class="page-header">
+              <h2>Head</h2>
+            </div>
+            <p>Head tags contains meta tags, font / css and some script files, other script files are added just before
+              the closing tag of the body.</p>
+            <p>Here are meta tags and title. You can edit them as you want except the <span
+                class="highlight">viewport</span> meta tag, it preserves responsive layout.</p>
+            <pre class="prettyprint linenums">&lt;meta charset=&quot;utf-8&quot; /&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;description&quot; content=&quot;ikonik - Responsive HTML5 vCard Template&quot;&gt;
+&lt;meta name=&quot;keywords&quot; content=&quot;vcard, html5, portfolio&quot;&gt;
+&lt;meta name=&quot;author&quot; content=&quot;Pixelwars&quot;&gt;
+&lt;meta name=&quot;theme-color&quot; content=&quot;#1755cf&quot; /&gt;
+</pre>
+
+            <p>Here are favicon and apple touch icon (196x196 pixels .png format);</p>
+            <pre class="prettyprint linenums">&lt;!-- FAV and TOUCH ICONS --&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;images/ico/favicon.ico&quot;&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; href=&quot;images/ico/apple-touch-icon.png&quot;/&gt;
+</pre>
+            <p>Note : For full coverage of favicon usage you can visit <a href="https://realfavicongenerator.net/"
+                target="_blank">RealFaviconGenerator</a>. </p>
+            <p>Here is the font css.</p>
+            <pre class="prettyprint linenums">&lt;!-- FONTS --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/fonts/jost/jost.css&quot;&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css?family=Anton&quot; rel=&quot;stylesheet&quot;&gt;
+</pre>
+
+            <p>Initial scripts in the head.</p>
+            <pre class="prettyprint linenums">&lt;!-- INITIAL SCRIPTS --&gt;
+&lt;script src=&quot;js/jquery-3.4.0.min.js&quot;&gt;&lt;/script&gt;</pre>
+            <p>Here are css files.</p>
+            <pre class="prettyprint linenums">
+&lt;!-- STYLES --&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/normalize.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/bootstrap.min.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/nprogress/nprogress.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/jquery.magnific-popup/magnific-popup.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/fonts/fontello/css/fontello.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/align.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/main.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/768.css&quot;&gt;
+</pre>
+
+            <p>All other script files are located at the <span class="highlight">end of the body tag</span>. These are
+              the general script files used over all files.</p>
+            <pre class="prettyprint linenums">
+&lt;!-- SCRIPTS --&gt;
+&lt;script src=&quot;js/TweenMax.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.address.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/nprogress/nprogress.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.isotope.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/imagesloaded.pkgd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.fitvids.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.magnific-popup/jquery.magnific-popup.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.easing.1.3.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.validate.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.sticky-sidebar.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/main.js&quot;&gt;&lt;/script&gt;
+</pre>
+          </div>
+          <!-- HEAD
+            ================================================== -->
+
+          <!-- LAYOUT
+            ================================================== -->
+          <div id="layout" class="sub-section">
+            <div class="page-header">
+              <h2>Layout</h2>
+            </div>
+            <p class="lead">Homepage shows 5 pages : About Me + Resume + Portfolio + Blog(latest posts only) + Contact.
+              Pages are fetched via ajax and being showed in a fullscreen layout.</p>
+            <p>The HTML files are in well formatted and highly commented.</p>
+            <h3>Homepage Markup</h3>
+            <p>Here is the markup for homepage layout;</p>
+            <pre class="prettyprint linenums">&lt;body&gt;
+	&lt;!-- .home-wrap --&gt;
+    &lt;div class=&quot;home-wrap&quot;&gt;
+
+
+        &lt;!-- HOME BG IMAGE --&gt;
+        &lt;div class=&quot;home-bg&quot; style=&quot;background-image: url(images/home/cover.jpg)&quot;&gt;&lt;/div&gt;
+        &lt;!-- HOME BG IMAGE --&gt;
+
+
+        &lt;!-- HOME BG LOGO --&gt;
+        &lt;div class=&quot;home-bg-logo&quot;&gt;
+            &lt;img src=&quot;images/home/icon-bg.svg&quot; alt=&quot;icon&quot; /&gt;
+        &lt;/div&gt;
+        &lt;!-- HOME BG LOGO --&gt;
+
+
+        &lt;!-- .home-menu --&gt;
+        &lt;nav class=&quot;home-menu&quot;&gt;
+            &lt;a href=&quot;about.html&quot; data-slug=&quot;about&quot;&gt;
+                &lt;span class=&quot;item-name&quot;&gt;About&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;a href=&quot;resume.html&quot; data-slug=&quot;resume&quot;&gt;
+                &lt;span class=&quot;item-name&quot;&gt;Resume&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;a href=&quot;portfolio.html&quot; data-slug=&quot;portfolio&quot; id=&quot;portfolio-link&quot;&gt;
+                &lt;span class=&quot;item-name&quot;&gt;Portfolio&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;a href=&quot;blog-latest.html&quot; data-slug=&quot;blog&quot;&gt;
+                &lt;span class=&quot;item-name&quot;&gt;Blog&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;a href=&quot;contact.html&quot; data-slug=&quot;contact&quot;&gt;
+                &lt;span class=&quot;item-name&quot;&gt;Contact&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/nav&gt;
+        &lt;!-- .home-menu --&gt;
+
+
+        &lt;!-- .home-heading --&gt;
+        &lt;div class=&quot;home-heading&quot;&gt;
+
+            &lt;!-- .home-logo --&gt;
+            &lt;div class=&quot;home-logo&quot;&gt;
+
+                &lt;p class=&quot;home-job-title&quot;&gt;Web Developer&lt;/p&gt;
+
+                &lt;p class=&quot;home-marquee&quot;&gt;
+                    Building creative websites for the world&#39;s people. Always in search
+                    of the great user experience.
+                    Building creative websites for the world&#39;s people. Always in search
+                    of the great user experience.
+                &lt;/p&gt;
+
+                &lt;i class=&quot;home-logo-left &quot;&gt;&lt;span&gt;Web&lt;/span&gt;&lt;/i&gt;
+                &lt;i class=&quot;home-logo-center&quot;&gt;
+                    &lt;span class=&quot;home-icon&quot;&gt;
+                        &lt;img src=&quot;images/home/icon.svg&quot; alt=&quot;icon&quot; /&gt;
+                    &lt;/span&gt;
+                    &lt;span class=&quot;home-text-container&quot;&gt;
+                        &lt;span class=&quot;home-text-container-placeholder&quot;&gt;Jason Whallberg&lt;/span&gt;
+                    &lt;/span&gt;
+                    &lt;span class=&quot;home-text&quot;&gt;Jason Whallberg&lt;/span&gt;
+                &lt;/i&gt;
+                &lt;i class=&quot;home-logo-right&quot;&gt;&lt;span&gt;Developer&lt;/span&gt;&lt;/i&gt;
+
+            &lt;/div&gt;
+            &lt;!-- .home-logo --&gt;
+
+        &lt;/div&gt;
+        &lt;!-- .home-heading --&gt;
+
+
+        &lt;!-- .home-social --&gt;
+        &lt;p class=&quot;home-social&quot;&gt;
+            &lt;a class=&quot;social-link facebook&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+            &lt;a class=&quot;social-link linkedin&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+            &lt;a class=&quot;social-link behance&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+            &lt;a class=&quot;social-link dribbble&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+        &lt;/p&gt;
+        &lt;!-- .home-social --&gt;
+
+
+        &lt;!-- .home-footer --&gt;
+        &lt;p class=&quot;home-footer&quot;&gt;&copy; 2019 Jack O&#39;Connor&lt;/p&gt;
+        &lt;!-- .home-footer --&gt;
+
+
+        &lt;!-- FULL SCREEN TOGGLE --&gt;
+        &lt;div class=&quot;full-screen-wrap&quot;&gt;
+            &lt;div class=&quot;top-left&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;top-left-horiz&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;top-right&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;top-right-horiz&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;bottom-left&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;bottom-left-horiz&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;bottom-right&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;bottom-right-horiz&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- FULL SCREEN TOGGLE --&gt;
+
+
+		
+        &lt;!-- REMOVE THIS MARKUP TO DISABLE BG AUDIO --&gt;
+        
+        &lt;div class=&quot;bg-music-confirm&quot;&gt;
+            &lt;p&gt;Autoplay Music?&lt;/p&gt;
+            &lt;p&gt;&lt;a class=&quot;bg-music-yes&quot;&gt;Yeah!&lt;/a&gt; &lt;a class=&quot;bg-music-no&quot;&gt;Nope&lt;/a&gt; &lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;!-- HOME BG MUSIC --&gt;
+        &lt;div id=&quot;play-music&quot; class=&quot;play-music autoplay&quot;&gt;
+            &lt;div id=&quot;music-animation&quot; class=&quot;music-animation&quot;&gt;
+                &lt;span class=&quot;music-bar bar1&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;music-bar bar2&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;music-bar bar3&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;music-bar bar4&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;music-bar bar5&quot;&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;music-toggle&quot; id=&quot;music-toggle&quot;&gt;&lt;a id=&quot;toggle&quot; data-on-text=&quot;Music on&quot; data-off-text=&quot;Music off&quot;&gt;Music off&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;audio id=&quot;bg-music&quot; loop src=&quot;audio/music2.mp3&quot;&gt;&lt;/audio&gt;
+        &lt;!-- HOME BG MUSIC --&gt;
+
+        &lt;!-- REMOVE THIS MARKUP TO DISABLE BG AUDIO --&gt;
+
+
+
+    &lt;/div&gt;
+    &lt;!-- .home-wrap --&gt;
+
+
+
+
+    &lt;!-- .one-page-content--&gt;
+    &lt;div class=&quot;one-page-content&quot;&gt;
+
+        &lt;a href=&quot;/&quot; class=&quot;close-page&quot;&gt;
+            &lt;span class=&quot;close-text&quot;&gt;&lt;/span&gt;
+        &lt;/a&gt;
+
+        &lt;div class=&quot;content-wrap&quot;&gt;&lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;!-- .one-page-content--&gt;
+
+
+    &lt;!-- page transition overlays --&gt;
+    &lt;div class=&quot;overlay overlay-1&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;overlay overlay-2&quot;&gt;&lt;/div&gt;
+    &lt;!-- page transition overlays --&gt;
+
+
+
+    &lt;!-- PORTFOLIO SINGLE AJAX CONTENT CONTAINER --&gt;
+    &lt;div class=&quot;p-overlay&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;p-overlay&quot;&gt;&lt;/div&gt;
+	
+
+        
+&lt;/body&gt;
+
+</pre>
+            <div class="alert"> <strong>Note : </strong> Homepeage ajax pages may not work on your local machine due to
+              the browser security restrictions, you need to start a local server (you can do it with <a
+                href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">VS Code Live Server
+                extension</a>) or upload your site to a live server(web).</div>
+
+          </div>
+          <!-- LAYOUT
+            ================================================== -->
+
+
+          <!-- GRID
+            ================================================== -->
+          <div id="grid" class="sub-section">
+            <div class="page-header">
+              <h2>Grid<small>Responsive Grid System</small></h2>
+            </div>
+            <p class="lead">This template is based on <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>'s
+              solid responsive 12 column <a target="_blank" href="http://getbootstrap.com/css/#grid">grid system</a>.
+            </p>
+
+            <p>Here is a simple example of using grid to crate a 3 column layout;</p>
+
+            <pre class="prettyprint linenums">
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;column 4/12&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;column 4/12&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;column 4/12&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+            <p>Note that: columns must be wrapped by a <code>row</code> container. This is a simple usage of the grid
+              system. Bootstrap grid sytems has more powerfull features, check out <a target="_blank"
+                href="http://getbootstrap.com/css/#grid">Bootstrap Doc</a> to learn more about the grid system.</p>
+
+          </div>
+          <!-- GRID
+            ================================================== -->
+
+
+
+          <!-- ICONS
+            ================================================== -->
+          <div id="icons" class="sub-section">
+            <div class="page-header">
+              <h2>Icons<small>icons ready to use</small></h2>
+            </div>
+            <p class="lead">This template uses 1 font icon set. They are all font icons(vector) and can be styled easily
+              with css. They are also easy to drop in anywhere as you will see in some part of this template.</p>
+
+            <h3>All Available Icons</h3>
+
+            <p><a target="_blank" href="http://themes.pixelwars.org/ikonik-html/css/fonts/fontello/demo.html">Fontello
+                Icons</a></p>
+
+
+            <h3>Usage of the icons</h3>
+
+            <p>For Fontello icons;</p>
+
+            <pre class="prettyprint linenums">
+&lt;i class=&quot;pw-icon-apple&quot;&gt;</pre>
+
+            <h3>Icons on the homepage</h3>
+            <p><a target="_blank" href="https://www.flaticon.com/family/meticulous/lineal">Meticulous Icon Family</a>
+            </p>
+
+          </div>
+          <!-- ICONS
+            ================================================== -->
+
+
+
+          <!-- ABOUT ME 
+            ================================================== -->
+          <div id="about-me" class="sub-section">
+            <div class="page-header">
+              <h2>About Me</h2>
+            </div>
+            <p>&quot;About Me&quot; page is consist of : Services / Work Process / Fun Fact and Clients.</p>
+
+            <h3>Services</h3>
+
+            <pre class="prettyprint linenums">
+&lt;div class=&quot;boxed is-dark&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+
+    &lt;div class=&quot;col-sm-3&quot;&gt;
+      &lt;img src=&quot;images/site/about.jpg&quot; alt=&quot;about image&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;col-sm-9&quot;&gt;
+
+      &lt;h2 class=&quot;fw-300&quot;&gt;Hello, I am Jason Whallberg, a &lt;strong&gt;graphic
+          designer&lt;/strong&gt; based in LA.
+        I can design beautiful &lt;strong&gt;type faces&lt;/strong&gt; and
+        &lt;strong&gt;user
+          interfaces&lt;/strong&gt; for both digital and print
+        media and I love coffee.
+      &lt;/h2&gt;
+
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+              
+
+&lt;!-- SERVICES --&gt;
+
+&lt;!-- section-title --&gt;
+&lt;div class=&quot;section-title center&quot;&gt;
+	&lt;h2&gt;
+		&lt;i&gt;services&lt;/i&gt;
+	&lt;/h2&gt;
+&lt;/div&gt;
+&lt;!-- section-title --&gt;
+
+&lt;!-- row --&gt;
+&lt;div class=&quot;row&quot;&gt;
+
+	&lt;!-- col --&gt;
+	&lt;div class=&quot;col-sm-6 col-lg-3&quot;&gt;
+
+		&lt;!-- service --&gt;
+		&lt;div class=&quot;service&quot;&gt;
+			&lt;img src=&quot;images/site/service-01.svg&quot; alt=&quot;image&quot; /&gt;
+			&lt;h3&gt;Copywriter&lt;/h3&gt;
+			&lt;p&gt;I design super cool websites. It is a long established fact that
+				a reader will be distracted by the readable content.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;!-- service --&gt;
+
+	&lt;/div&gt;
+	&lt;!-- col --&gt;
+
+	&lt;!-- col --&gt;
+	&lt;div class=&quot;col-sm-6 col-lg-3&quot;&gt;
+
+		&lt;!-- service --&gt;
+		&lt;div class=&quot;service&quot;&gt;
+			&lt;img src=&quot;images/site/service-02.svg&quot; alt=&quot;image&quot; /&gt;
+			&lt;h3&gt;Game Dev&lt;/h3&gt;
+			&lt;p&gt;I can design beautiful type faces for both digital and print
+				media. It is a long established fact that a reader will be
+				distracted.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;!-- service --&gt;
+
+	&lt;/div&gt;
+	&lt;!-- col --&gt;
+
+	&lt;!-- col --&gt;
+	&lt;div class=&quot;col-sm-6 col-lg-3&quot;&gt;
+
+		&lt;!-- service --&gt;
+		&lt;div class=&quot;service&quot;&gt;
+			&lt;img src=&quot;images/site/service-03.svg&quot; alt=&quot;image&quot; /&gt;
+			&lt;h3&gt;Management&lt;/h3&gt;
+			&lt;p&gt;I write about web design. It is a long established fact that a
+				reader will be distracted by the readable content.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;!-- service --&gt;
+
+	&lt;/div&gt;
+	&lt;!-- col --&gt;
+
+	&lt;!-- col --&gt;
+	&lt;div class=&quot;col-sm-6 col-lg-3&quot;&gt;
+
+		&lt;!-- service --&gt;
+		&lt;div class=&quot;service&quot;&gt;
+			&lt;img src=&quot;images/site/service-04.svg&quot; alt=&quot;image&quot; /&gt;
+			&lt;h3&gt;Problem Solver&lt;/h3&gt;
+			&lt;p&gt;I have strong project management skills. It is a long
+				established fact that a reader will be distracted by the
+				readable content.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;!-- service --&gt;
+
+	&lt;/div&gt;
+	&lt;!-- col --&gt;
+
+&lt;/div&gt;
+&lt;!-- row --&gt;
+&lt;!-- SERVICES --&gt;
+</pre>
+
+            <p>You can also use font icons instead of image icons in services.</p>
+
+            <h3>Work Procces</h3>
+
+            <pre class="prettyprint linenums">
+&lt;!-- PROCESS --&gt;
+
+&lt;!-- section-title --&gt;
+&lt;div class=&quot;section-title center&quot;&gt;
+	&lt;h2&gt;
+		&lt;i&gt;work procces&lt;/i&gt;
+	&lt;/h2&gt;
+&lt;/div&gt;
+&lt;!-- section-title --&gt;
+
+
+&lt;!-- row --&gt;
+&lt;div class=&quot;row&quot;&gt;
+
+	&lt;!-- col --&gt;
+	&lt;div class=&quot;col-xs-4 col-sm-2&quot;&gt;
+
+		&lt;!-- process --&gt;
+		&lt;div class=&quot;process&quot;&gt;
+			&lt;img src=&quot;images/site/process-01.svg&quot; alt=&quot;image&quot; /&gt;
+			&lt;h4&gt;Research&lt;/h4&gt;
+		&lt;/div&gt;
+		&lt;!-- process --&gt;
+
+	&lt;/div&gt;
+	&lt;!-- col --&gt;
+
+	&lt;!-- col --&gt;
+	&lt;div class=&quot;col-xs-4 col-sm-2&quot;&gt;
+
+		&lt;!-- process --&gt;
+		&lt;div class=&quot;process&quot;&gt;
+			&lt;img src=&quot;images/site/process-02.svg&quot; alt=&quot;image&quot; /&gt;
+			&lt;h4&gt;IDEA&lt;/h4&gt;
+		&lt;/div&gt;
+		&lt;!-- process --&gt;
+
+	&lt;/div&gt;
+	&lt;!-- col --&gt;
+
+	&lt;!-- col --&gt;
+	&lt;div class=&quot;col-xs-4 col-sm-2&quot;&gt;
+
+		&lt;!-- process --&gt;
+		&lt;div class=&quot;process&quot;&gt;
+			&lt;img src=&quot;images/site/process-03.svg&quot; alt=&quot;image&quot; /&gt;
+			&lt;h4&gt;DESIGN&lt;/h4&gt;
+		&lt;/div&gt;
+		&lt;!-- process --&gt;
+
+	&lt;/div&gt;
+
+	&lt;!-- col --&gt;
+
+	&lt;!-- col --&gt;
+	&lt;div class=&quot;col-xs-4 col-sm-2&quot;&gt;
+
+		&lt;!-- process --&gt;
+		&lt;div class=&quot;process&quot;&gt;
+			&lt;img src=&quot;images/site/process-04.svg&quot; alt=&quot;image&quot; /&gt;
+			&lt;h4&gt;DEVELOP&lt;/h4&gt;
+		&lt;/div&gt;
+		&lt;!-- process --&gt;
+
+	&lt;/div&gt;
+	&lt;!-- col --&gt;
+
+	&lt;!-- col --&gt;
+	&lt;div class=&quot;col-xs-4 col-sm-2&quot;&gt;
+
+		&lt;!-- process --&gt;
+		&lt;div class=&quot;process&quot;&gt;
+			&lt;img src=&quot;images/site/process-05.svg&quot; alt=&quot;image&quot; /&gt;
+			&lt;h4&gt;TEST&lt;/h4&gt;
+		&lt;/div&gt;
+		&lt;!-- process --&gt;
+
+	&lt;/div&gt;
+	&lt;!-- col --&gt;
+
+	&lt;!-- col --&gt;
+	&lt;div class=&quot;col-xs-4 col-sm-2&quot;&gt;
+
+		&lt;!-- process --&gt;
+		&lt;div class=&quot;process&quot;&gt;
+			&lt;img src=&quot;images/site/process-06.svg&quot; alt=&quot;image&quot; /&gt;
+			&lt;h4&gt;LAUNCH&lt;/h4&gt;
+		&lt;/div&gt;
+		&lt;!-- process --&gt;
+
+	&lt;/div&gt;
+	&lt;!-- col --&gt;
+
+&lt;/div&gt;
+&lt;!-- row --&gt;
+&lt;!-- PROCESS --&gt;
+</pre>
+
+            <p>You can also use image icons instead of font icons in work procces.</p>
+
+            <p>The markup for clients and fun-fact are pretty straightforward.</p>
+
+          </div>
+          <!-- ABOUT ME
+            ================================================== -->
+
+          <!-- RESUME
+            ================================================== -->
+          <div id="resume" class="sub-section">
+            <div class="page-header">
+              <h2>Resume</h2>
+            </div>
+            <p>Resume page is consist of : Work and Education History/ Skills / Testimonials. </p>
+
+            <h3>Skills</h3>
+            <p>Here is the markup for skills;</p>
+            <pre class="prettyprint linenums">
+&lt;!-- .skill-unit --&gt;
+&lt;div class=&quot;skill-unit&quot;&gt;
+	&lt;h4&gt;Sketch&lt;/h4&gt;
+	&lt;div class=&quot;bar&quot; data-percent=&quot;80&quot;&gt;
+		&lt;div class=&quot;progress&quot;&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- .skill-unit --&gt;
+
+&lt;!-- .skill-unit --&gt;
+&lt;div class=&quot;skill-unit&quot;&gt;
+	&lt;h4&gt;Adobe XD&lt;/h4&gt;
+	&lt;div class=&quot;bar&quot; data-percent=&quot;100&quot;&gt;
+		&lt;div class=&quot;progress&quot;&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- .skill-unit --&gt;
+</pre>
+            <p><strong>Note that : </strong> Use <code>data-percent</code> attribute to give percentage to each skill.
+            </p>
+
+          </div>
+          <!-- RESUME
+            ================================================== -->
+
+          <!-- PORTFOLIO
+            ================================================== -->
+          <div id="portfolio" class="sub-section">
+            <div class="page-header">
+              <h2>Portfolio</h2>
+            </div>
+            <p>Portfolio page has multi column masonry layout and filtering powered by <a target="_blank"
+                href="http://isotope.metafizzy.co/">isotope</a> plugin.</p>
+            <h3>Filters</h3>
+            <p>Here is the markup for filters;</p>
+
+            <pre class="prettyprint linenums">
+&lt;!--FILTERS--&gt;
+&lt;ul id=&quot;filters&quot; class=&quot;filters&quot;&gt;
+	&lt;li class=&quot;current&quot;&gt;
+		&lt;a href=&quot;#&quot; data-filter=&quot;*&quot;&gt;all&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+		&lt;a href=&quot;#&quot; data-filter=&quot;.media&quot;&gt;Media&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+		&lt;a href=&quot;#&quot; data-filter=&quot;.illustration&quot;&gt;Illustration&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+		&lt;a href=&quot;#&quot; data-filter=&quot;.video&quot;&gt;Video&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--FILTERS--&gt;
+</pre>
+            <p><strong>Note that : </strong> <code>data-filter=".design"</code> attiribute keeps the class name of items
+              which will be filtered under same category.</p>
+
+            <h3>Portfolio Items</h3>
+            <p>Here is the structure of portfolio items;</p>
+
+            <pre class="prettyprint linenums">&lt;!-- PORTFOLIO ITEMS --&gt;
+&lt;div class=&quot;portfolio-items media-grid masonry&quot; data-layout=&quot;masonry&quot; data-item-width=&quot;360&quot;&gt;
+
+  &lt;div class=&quot;media-cell illustration hentry&quot;&gt;
+	...
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;media-cell video hentry&quot;&gt;
+	...
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;media-cell media hentry&quot;&gt;
+	..
+  &lt;/div&gt;
+  
+&lt;/div&gt;
+&lt;!-- PORTFOLIO ITEMS --&gt;   </pre>
+            <p><code>data-item-width</code> is the column width for the items in the portfolio grid.</p>
+            <p><strong>Note that again : </strong> class name "video" in
+              <code>&lt;div class=&quot;media-cell video hentry&quot;&gt;</code> is related to
+              <code>data-filter=".video"</code> attribute of filter markup.</p>
+            <p><code>data-layout</code> determines grid layout, see <a target="_blank"
+                href="http://isotope.metafizzy.co/docs/layout-modes.html">all isotope layouts</a>. Most used two layouts
+              are <code>masonry</code> and <code>fitRows</code>.</p>
+
+            <div class="page-header">
+              <h3>Portfolio Item Types</h3>
+            </div>
+            <p>We have 3 different types of portfolio item in general; Ajax Portfolio Details / Lightbox (image - image
+              gallery - video - audio) and Custom Url.</p>
+            <h4>1- Ajax Portfolio Details Link</h4>
+            <p>Uses jquery ajax html loading to show portfolio details. Here is the markup;</p>
+            <pre class="prettyprint linenums">
+&lt;!-- portfolio-item - lightbox image --&gt;
+&lt;div class=&quot;media-cell media format-image hentry&quot;&gt;
+	&lt;div class=&quot;media-box&quot;&gt;
+		&lt;img src=&quot;images/portfolio/04.jpg&quot; alt=&quot;portfolio-post&quot;&gt;
+		&lt;div class=&quot;mask&quot;&gt;&lt;/div&gt;
+		&lt;!-- lightbox - image --&gt;
+		&lt;a href=&quot;images/portfolio/04.jpg&quot; data-title=&quot;by MERCEDES DEBELLARD&quot;
+			class=&quot;lightbox&quot;&gt;&lt;/a&gt;
+		&lt;!-- lightbox - image --&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-cell-desc&quot;&gt;
+		&lt;h3&gt;Portrait Skecth&lt;/h3&gt;
+		&lt;p class=&quot;category&quot;&gt;ligthbox image&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- portfolio-item - lightbox image --&gt;
+
+
+
+&lt;!-- portfolio-item - lightbox gallery --&gt;
+&lt;div class=&quot;media-cell media format-gallery hentry&quot;&gt;
+	&lt;div class=&quot;media-box&quot;&gt;
+		&lt;img src=&quot;images/portfolio/03.jpg&quot; alt=&quot;portfolio-post&quot;&gt;
+		&lt;div class=&quot;mask&quot;&gt;&lt;/div&gt;
+		&lt;!-- lightbox - gallery --&gt;
+		&lt;a href=&quot;images/portfolio/lightbox-01.jpg&quot; class=&quot;lightbox&quot;
+			data-title=&quot;Portraits by MERCEDES DEBELLARD&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;images/portfolio/lightbox-02.jpg&quot; class=&quot;lightbox&quot;
+			data-title=&quot;Portraits by MERCEDES DEBELLARD&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;images/portfolio/lightbox-03.jpg&quot; class=&quot;lightbox&quot;
+			data-title=&quot;Portraits by MERCEDES DEBELLARD&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;images/portfolio/lightbox-04.jpg&quot; class=&quot;lightbox&quot;
+			data-title=&quot;Portraits by MERCEDES DEBELLARD&quot;&gt;&lt;/a&gt;
+		&lt;!-- lightbox - gallery --&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-cell-desc&quot;&gt;
+		&lt;h3&gt;Wizard Adventure&lt;/h3&gt;
+		&lt;p class=&quot;category&quot;&gt;lightbox gallery&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- portfolio-item - lightbox gallery --&gt;
+
+
+
+&lt;!-- portfolio-item - lightbox video --&gt;
+&lt;div class=&quot;media-cell illustration video format-video hentry&quot;&gt;
+
+	&lt;div class=&quot;media-box&quot;&gt;
+		&lt;img src=&quot;images/portfolio/09.jpg&quot; alt=&quot;portfolio-post&quot;&gt;
+		&lt;div class=&quot;mask&quot;&gt;&lt;/div&gt;
+		&lt;!-- lightbox - video --&gt;
+		&lt;a href=&quot;https://vimeo.com/123320091&quot; data-title=&quot;An Animated History of the Van&quot;
+			class=&quot;lightbox mfp-iframe&quot;&gt;&lt;/a&gt;
+		&lt;!-- lightbox - video --&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;media-cell-desc&quot;&gt;
+		&lt;h3&gt;Sleepy Games&lt;/h3&gt;
+		&lt;p class=&quot;category&quot;&gt;lightbox video&lt;/p&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;!-- portfolio-item - lightbox video --&gt;
+
+
+
+&lt;!-- portfolio-item - lightbox soundcloud --&gt;
+&lt;div class=&quot;media-cell media format-audio hentry&quot;&gt;
+	&lt;div class=&quot;media-box&quot;&gt;
+		&lt;img src=&quot;images/portfolio/05.jpg&quot; alt=&quot;portfolio-post&quot;&gt;
+		&lt;div class=&quot;mask&quot;&gt;&lt;/div&gt;
+		&lt;!-- lightbox - soundcloud : url copied from share/embed code --&gt;
+		&lt;a href=&quot;https://w.soundcloud.com/player/?visual=true&amp;auto_play=true&amp;url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&amp;show_artwork=true&quot;
+			data-title=&quot;Time (feat. G-Eazy &amp; Olivver the Kid)&quot;
+			class=&quot;lightbox mfp-iframe&quot;&gt;&lt;/a&gt;
+
+		&lt;!-- lightbox - soundcloud --&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-cell-desc&quot;&gt;
+		&lt;h3&gt;Changes&lt;/h3&gt;
+		&lt;p class=&quot;category&quot;&gt;lightbox soundcloud&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- portfolio-item - lightbox soundcloud --&gt;
+</pre>
+            <p> <strong>Note that : </strong> lightbox video or audio link need to have class <code>mfp-iframe</code> to
+              work correctly. <p>
+
+                <h4>3- Custom Url</h4>
+
+                <p>Opens a custom url in a new tab. The markup;</p>
+
+                <pre class="prettyprint linenums">
+&lt;!-- portfolio-item - custom url --&gt;
+&lt;div class=&quot;media-cell illustration format-link hentry&quot;&gt;
+	&lt;div class=&quot;media-box&quot;&gt;
+		&lt;img src=&quot;images/portfolio/07.jpg&quot; alt=&quot;portfolio-post&quot;&gt;
+		&lt;div class=&quot;mask&quot;&gt;&lt;/div&gt;
+		&lt;a href=&quot;https://dribbble.com/shots/5926608-Creatin-Way-The-Right-Way&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-cell-desc&quot;&gt;
+		&lt;h3&gt;Creatin — Way The Right Way&lt;/h3&gt;
+		&lt;p class=&quot;category&quot;&gt;external link&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- portfolio-item - custom url --&gt;       
+</pre>
+
+          </div>
+          <!-- PORTFOLIO
+            ================================================== -->
+
+          <!-- PORTFOLIO SINGLE
+            ================================================== -->
+          <div id="portfolio-single" class="sub-section">
+            <div class="page-header">
+              <h2>Portfolio Single</h2>
+            </div>
+            <div class="alert"> <strong>Remember : </strong> You need to create an html file for for each portfolio
+              item. </div>
+            <h3>Portfolio Single Layout</h3>
+            <p>Here is the generic layout of portfolio single pages;</p>
+            <pre class="prettyprint linenums">
+&lt;!-- .portfolio-single --&gt;
+&lt;div class=&quot;portfolio-single page-layout&quot;&gt;
+
+
+	&lt;!-- .hentry --&gt;
+	&lt;article class=&quot;hentry&quot;&gt;
+
+		&lt;!-- .entry-header --&gt;
+		&lt;header class=&quot;entry-header&quot;&gt;
+
+
+			&lt;!-- PORTFOLIO-NAV --&gt;
+			&lt;div class=&quot;portfolio-nav&quot;&gt;
+				&lt;span class=&quot;prev ajax&quot;&gt;&lt;a href=&quot;portfolio-item-03.html&quot;&gt;Prev&lt;/a&gt;&lt;/span&gt;
+				&lt;span class=&quot;back&quot;&gt;&lt;a href=&quot;#/portfolio&quot;&gt;Close&lt;/a&gt;&lt;/span&gt;
+				&lt;span class=&quot;next ajax&quot;&gt;&lt;a href=&quot;portfolio-item-02.html&quot;&gt;Next&lt;/a&gt;&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;!-- PORTFOLIO-NAV --&gt;
+
+			&lt;!-- TITLE --&gt;
+			&lt;h1 class=&quot;entry-title&quot;&gt;Vans illustrations&lt;/h1&gt;
+			&lt;!-- TITLE --&gt;
+
+		&lt;/header&gt;
+		&lt;!-- .entry-header --&gt;
+
+
+		&lt;!-- .entry-content --&gt;
+		&lt;div class=&quot;entry-content&quot;&gt;
+
+
+			&lt;!-- .portfolio-desc --&gt;
+			&lt;div class=&quot;portfolio-desc&quot;&gt;
+
+				&lt;p&gt;Vans isn&#39;t longer just a skateboarding brand, is become a broader lifestyle brand. The Old Skool and Classic Vans inspired me to create a series of figures that represent this new lifestyle and also explore new principles, organic and geometric shapes that are also associated with the products.
+&lt;/p&gt;
+
+				&lt;div class=&quot;portfolio-meta&quot;&gt;
+					&lt;span&gt;&lt;strong&gt;Client&lt;/strong&gt; Vans&lt;/span&gt;
+					&lt;span&gt;&lt;strong&gt;Date&lt;/strong&gt; 2019-03-01&lt;/span&gt;
+					&lt;span&gt;&lt;strong&gt;Services&lt;/strong&gt; Branding, Illustration&lt;/span&gt;
+				&lt;/div&gt;
+
+				&lt;p&gt;
+					&lt;a href=&quot;https://www.behance.net/gallery/77400809/Vans-Faces&quot;
+						target=&quot;_blank&quot; class=&quot;button primary&quot;&gt;LAUNCH PROJECT&lt;/a&gt;
+				&lt;/p&gt;
+
+			&lt;/div&gt;
+			&lt;!-- .portfolio-desc --&gt;
+
+
+			&lt;p&gt;
+				&lt;img src=&quot;images/portfolio/single/01.jpg&quot; alt=&quot;project&quot;&gt;
+				&lt;img src=&quot;images/portfolio/single/02.jpg&quot; alt=&quot;project&quot;&gt;
+				&lt;img src=&quot;images/portfolio/single/03.jpg&quot; alt=&quot;project&quot;&gt;
+			&lt;/p&gt;
+
+
+
+
+
+		&lt;/div&gt;
+		&lt;!-- .entry-content --&gt;
+
+
+	&lt;/article&gt;
+	&lt;!-- .hentry --&gt;
+
+
+&lt;/div&gt;
+&lt;!-- .portfolio-single --&gt;
+</pre>
+            <p><strong>Note : </strong> we will pull the content of
+              <code>&lt;div class=&quot;portfolio-single&quot;&gt;</code> in index.html via ajax. </p>
+            <p> <strong>NOTE :</strong> You can add images or videos as many as you wish to portfolio single content as
+              shown above. They will behave flexible. </p>
+            <p> <strong>NOTE :</strong> You can built your own portfolio single templates with built in <a
+                href="http://getbootstrap.com/css/#grid" target="_blank">bootstrap responsive grid</a> as you wish. </p>
+          </div>
+          <!-- PORTFOLIO SINGLE
+            ================================================== -->
+
+          <!-- CONTACT
+            ================================================== -->
+          <div id="contact" class="sub-section">
+            <div class="page-header">
+              <h2>Contact</h2>
+            </div>
+            <p>Contact page is consist of : Contact Info / Social Icons / Contact Form / Google Map.</p>
+
+            <h3>Setting up Contact Form</h3>
+
+            <p>1-) You can change mail subject in form's html markup;</p>
+
+            <pre
+              class="prettyprint linenums">&lt;!-- enter mail subject here --&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;subject&quot; id=&quot;subject&quot; value=&quot;You have a new message from ikonik!&quot;&gt;</pre>
+            <p>Change only the <code>value="You have a new message from ikonik!"</code> to your desired subject.</p>
+
+            <p>2-) Edit <code>send-mail.php</code> in a text editor, </p>
+
+            <pre class="prettyprint linenums">// site owner
+$site_name = 'ikonik HTML5 Template';
+$sender_domain = 'server@your-domain.com';
+$to = 'your-mail@gmail.com';
+</pre>
+            <ul>
+              <li><code>$site_name</code> : this will be shown as sender name.</li>
+              <li><code>$sender_domain</code> : this is required for some hosting like dreamhost. It should be like
+                <code>server@your-domain.com</code>.</li>
+              <li><code>$to</code> : This is the receiver e-mail address, your address.</li>
+            </ul>
+
+            <h3>Social Icons</h3>
+
+            <p>Here is the markup for all available social icons;</p>
+
+            <pre class="prettyprint linenums">&lt;!-- SOCIAL --&gt;
+&lt;p class=&quot;center&quot;&gt;
+    &lt;a class=&quot;social-link facebook&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link twitter&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link linkedin&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link google-plus&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link pinterest&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link github&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link behance&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link dribbble&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link instagram&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link lastfm&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link rss&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link vimeo&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link forrst&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link skype&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link vine&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link youtube&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link flickr&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link tumblr&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link blogger&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link delicious&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link digg&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link wordpress&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link stack-overflow&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link foursquare&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link xing&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link weibo&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link vkontakte&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link soundcloud&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link fivehundredpx&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link slideshare&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link spotify&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link imdb&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link snapchat&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;social-link email&quot; href=&quot;mailto:someone@example.com&quot;&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;!-- SOCIAL --&gt;
+</pre>
+
+
+          </div>
+          <!-- CONTACT
+            ================================================== -->
+
+
+
+        </section>
+        <!-- HTML
+        ================================================== -->
+
+        <!-- CSS
+        ================================================== -->
+        <section id="css">
+          <div class="page-header">
+            <h1>CSS<small>style files used</small></h1>
+          </div>
+          <p class="lead">Here is a complete list of used css files in the theme and what thay stand for;</p>
+          <ul>
+            <li><strong>normalize.css :</strong> <a href="https://necolas.github.io/normalize.css/"
+                target="_blank">Normalize.css</a> makes browsers render all elements more consistently and in line with
+              modern standards. It precisely targets only the styles that need normalizing.</li>
+            <li><strong>bootstrap.min.css :</strong> <a href="http://getbootstrap.com/" target="_blank">Bootstrap </a>
+              is a powerful front-end framework and we only used the responsive grid system for our layout.</li>
+            <li><strong>fontello.css : </strong>includes styles for fontello font icons.</li>
+            <li><strong>nprogress.css : </strong>style file fo the <a target="_blank"
+                href="http://ricostacruz.com/nprogress/">nprogress</a> script file.</li>
+            <li><strong>magnific-popup.css :</strong> is the style file of <a
+                href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup </a> jquery plugin,
+              used for lightboxes on portfolio page.</li>
+            <li><strong>align.css :</strong> content alignment styles (image alignments etc..).</li>
+            <li><strong>main.css :</strong> is the main style file of the theme. Layout/font/color and other style
+              declerations are in this file. Code blocks are grouped and commented.</li>
+            <li><strong>768.css :</strong> is the main style file for the theme, contains tablet and desktop styles.
+            </li>
+          </ul>
+
+          <h3>Included Fonts</h3>
+          <p>In this theme we have used font icons instead of png icons, because font icons are vector-scalable, ready
+            for retina screens, saves bandwidth and easy to work with.</p>
+          <ul>
+            <li><strong>css/fonts/fontello : </strong> a custom set of icons from <a href="http://fontello.com/"
+                target="_blank">Fontello.com</a>, mostly used for social icons.</li>
+            <li><strong>css/fonts/jost : </strong> <a href="https://indestructibletype.com/Jost.html"
+                target="_blank">Jost*</a> is a beautiful font created by indestructible type*.</li>
+          </ul>
+        </section>
+        <!-- CSS
+        ================================================== -->
+
+        <!-- JAVASCRIPT
+        ================================================== -->
+        <section id="javascript">
+          <div class="page-header">
+            <h1>Javascript<small>script files used</small></h1>
+          </div>
+          <p class="lead">We are using jquery (v3.2.1) as javascipt framework.</p>
+          <p>Here is a complete list of used script files in the template and what thay stand for;</p>
+          <ul>
+            <li><strong>jquery-3.4.0.min.js :</strong> <a href="http://jquery.com/" target="_blank">jQuery</a> is a fast
+              and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and
+              Ajax interactions for rapid web development.</li>
+            <li><strong>TweenMax.min.js :</strong> <a href="https://greensock.com/tweenmax" target="_blank">TweenMax</a>
+              is the most feature-packed (and popular) animation tool, it used for homepage intro animations. </li>
+            <li><strong>jquery.address.js :</strong> <a href="http://www.asual.com/jquery/address/"
+                target="_blank">jQuery Address </a> plugin provides powerful deep linking capabilities and allows the
+              creation of unique virtual addresses that can point to a website section or an application state. </li>
+            <li><strong>nprogress.js :</strong> <a target="_blank"
+                href="http://ricostacruz.com/nprogress/">nprogress</a> is a nanoscopic progress bar. Featuring realistic
+              trickle animations to convince your users that something is happening! </li>
+            <li><strong>jquery.easing.1.3.js :</strong> <a target="_blank"
+                href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery Easing Plugin</a> is a jQuery plugin with
+              advanced easing options for custom made animations.</li>
+            <li><strong>jquery.sticky-sidebar.min.js :</strong> <a target="_blank"
+                href="https://abouolia.github.io/sticky-sidebar/">Sticky Sidebar</a> is a pure JavaScript plugin for
+              making smart and high performance sticky sidebar.</li>
+            <li><strong>imagesloaded.pkgd.min.js :</strong> <a href="https://github.com/desandro/imagesloaded"
+                target="_blank">imagesLoaded</a> is a jQuery plugin to detect when images have been loaded, used on
+              portfolio single ajax view.</li>
+            <li><strong>jquery.isotope.min.js :</strong> <a href="http://isotope.metafizzy.co/"
+                target="_blank">Isotope</a> is an exquisite jQuery plugin for magical layouts. We used it to build
+              portfolio layout and filtering. Also for gallery page layout.</li>
+            <li><strong>jquery.fitvids.js :</strong> <a href="http://fitvidsjs.com/" target="_blank">fitvids.JS</a> is a
+              lightweight, easy-to-use jQuery plugin for fluid width video embeds. We used it for responsive video
+              embeeding.</li>
+            <li><strong>jquery.validate.min.js :</strong> <a
+                href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/" target="_blank">jQuery validate
+                plugin</a> is a jQuery plugin makes simple client-side form validation. We used it for contact form
+              client-side validation.</li>
+            <li><strong>jquery.magnific-popup.min.js :</strong> is the script file of <a
+                href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup </a> jquery plugin,
+              used for lightbox.</li>
+            <li><strong>https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false :</strong>is the script file
+              for the google map api, used for the map on the contact page.</li>
+            <li><strong class="highlight">main.js :</strong> This is the main script file of the theme. All the plugin
+              initilizations and other script works are done in this file with comments.</li>
+          </ul>
+        </section>
+        <!-- JAVASCRIPT
+        ================================================== -->
+
+        <!-- CUSTOMIZATION
+        ================================================== -->
+        <section id="customization">
+          <div class="page-header">
+            <h1>Customization<small>how to customize the template to your needs.</small></h1>
+          </div>
+          <p class="lead">We designed this template for easy customization. You can customize the template easily to
+            your needs in two general ways : Html Data Attributes / CSS Skins.</p>
+
+
+          <!-- CUSTOM CSS
+            ================================================== -->
+          <div id="custom-css" class="sub-section">
+            <div class="page-header">
+              <h2>Custom CSS</h2>
+            </div>
+            <p>While this template is designed for easily styling with predefined css skin files if you want to edit a
+              specific section of the site, follow these steps; </p>
+            <p>First grab the element you want to style by inspecting element in your browser, right click the element
+              and click <span class="highlight">Inspect Element</span>. If you don't know how, check out <a
+                href="http://net.tutsplus.com/tutorials/tools-and-tips/chrome-dev-tools-markup-and-style/"
+                target="_blank">this article</a>, once you are familiar with this approach you will find it extremely
+              easy to edit/override current styles of an element.</p>
+            <p>Let's say you want to make active filter link item bolder in portfolio filtering. Grab the element by
+              right click on it and click "Inspect Element", on the right pane of developer tool window we can see to
+              code to grab the elemnent with css : <code>#filters .current a</code> Then do the following;</p>
+            <pre class="prettyprint linenums">#filters .current a { font-weight: bold; }</pre>
+            <p>If you find that your new style is not overriding, it is most likely because of a specificity problem.
+              Scroll down in your CSS file and make sure that there isn't a similar style that has more weight .</p>
+            <pre class="prettyprint linenums">#portfolio #filters .current a { font-weight: bold ; }</pre>
+            <p>And if your new style is not overriding, add <code>!important</code> at the end of style definition;</p>
+            <pre class="prettyprint linenums">#filters .current a { font-weight: bold !important; }</pre>
+            <p> <strong>NOTE : </strong> Add your custom css code after all style definitions in your <code>head</code>
+              tag. </p>
+            <pre class="prettyprint linenums">&lt;style&gt;
+	#filters .current a { font-weight: bold !important; }
+&lt;/style&gt;</pre>
+
+            <p>Here are some simple css code snippets to customize the essentials;</p>
+
+
+
+            <p>Change link colors;</p>
+            <pre class="prettyprint linenums">
+a {
+ 	color: #1851f1;
+	}
+a:hover {
+ 	color: #2c00ff;
+	}
+.cool-link {
+	background-image: linear-gradient(transparent 88%, #2c00ff 12%);
+	}	</pre>
+
+            <p>Change text-selection color;</p>
+            <pre class="prettyprint linenums">
+/* Text Selection */
+::selection {
+ 	text-shadow: none; color: #fff; background: #000;
+	}
+::-moz-selection {
+ 	text-shadow: none; color: #fff; background: #000;
+	}</pre>
+
+            <h3>Changing Primary Color</h3>
+
+            <p>You will see "<strong>THEME</strong>" section at the end of the <code>main.css</code> file. You can
+              easily change primary color there.</p>
+
+            <pre class="prettyprint linenums">
+/* PRIMARY COLOR : #1851f1 */
+.button:after,
+input[type=submit]:hover, 
+input[type=button]:hover, 
+.more-link:after,
+button:hover, 
+.pagination a:hover,
+.navigation a:hover,
+.event:nth-of-type(2):after,
+.elementor-widget:nth-of-type(2) .event:after,
+.portfolio-nav a:hover,
+.skill-unit .bar .progress,
+#nprogress .bar,
+.media-date,
+.home-menu .item-name::before,
+.home-menu .item-name::after,
+.overlay-2,
+.mfp-bg  {
+ 	background-color: #1851f1;
+	}
+*::-webkit-scrollbar-thumb {
+	background-color: #1851f1;
+	}
+.bypostauthor > article,
+.event h3,
+input:not([type=submit]):not([type=button]):not([type=file]):not([type=radio]):not([type=checkbox]):focus, 
+textarea:focus, 
+input:focus, 
+select:focus,
+.tabs .tab-titles li a.active,
+input[type=submit], 
+input[type=button], 
+button, 
+.button,
+.more-link,
+.navigation a {
+	border-color: #1851f1
+	}
+.event h3,
+.entry-title a:hover,
+input[type=submit], 
+input[type=button], 
+button, 
+.button,
+.more-link,
+.navigation a,
+.filters .current .cool-link {
+	color: #1851f1
+	}
+#nprogress .spinner-icon {
+  	border-top-color: #1851f1; border-left-color: #1851f1;
+	}
+</pre>
+            <p>You can check out <code>Customizer.txt</code> file in the theme folder for more options to customize your
+              template. Here is the contents of this file;</p>
+
+            <pre class="prettyprint linenums">
+ikonik CUSTOMIZER OPTIONS
+
+ - This file is preapared for WordPress Customizer 
+ but you can use the css codes below to customize your template with extra css too ;)
+
+
+
+
+--------------------- Customizer > General  
+
+
+	- Sound Effects (dropdown on/off)
+		default		: ON
+		class		: add class to html tag: "sound-effects"
+		
+	- Background Music (file:upload : mp3)
+		remove markup on index.html when no mp3 is uploaded
+		
+	- Background Music Autoplay
+		default		: on
+		class 		: <div id="play-music" class="play-music autoplay"> *remove autoplay class when OFF
+
+	- Click Ripple Effect (dropdown on/off)
+		default		: ON
+		html tag data attribute: data-click-ripple-animation="yes"
+		
+
+
+------------------------------------------	
+	
+	
+
+
+
+--------------------- Customizer > Typography
+
+
+	- Body Font (dropdown Google Fonts List)
+		default 	: Jost*
+		css			: see below	
+	
+body,
+input,
+textarea,
+select,
+input[type=file] {
+	font-family: 'Jost*';
+	}
+	
+
+	- Body Font Size (input:number - min:10 - max: 30 - steps:1)
+		default		: 18px
+		css			: @media screen and (min-width: 992px) { body { font-size: 18px; } }				
+
+	- Headings Font (dropdown Google Fonts List)
+		default 	: Jost*
+		css			: 
+h1,
+.entry-title {
+	font-family: 'Jost*', sans-serif;
+	}
+	
+	- Headings Font Size (input:number - min:10 - max: 100 - steps:2)
+		default 	: 62
+		css			: @media screen and (min-width: 991px) { h1 { font-size: 62px; } }
+	
+	- Headings Font Weight (dropdown : 100-900)
+		default 	: 400
+		css			: h1, .entry-title { font-weight: 400; }
+
+
+	- Sub Headings Font (dropdown Google Fonts List)
+		default 	: Jost*
+		css			: see below
+	
+h2, h3, h4, h5, h6, .filters, .nav-menu, .card-nav, th, dt, .button, .catlinks a, input[type=submit], button, label, .tab-titles, .more-link, blockquote {
+ 	font-family: 'Jost*', sans-serif;
+	}
+	
+
+	- Buttons Font Size (input:number - min:9 - max: 20 - steps:1)
+		default 	: 11
+		css			: input[type=submit], input[type=button], button, .button, .more-link { font-size: 11px; }
+	
+	- Buttons Font Weight (dropdown : 100-900)
+		default 	: 700
+		css			: input[type=submit], input[type=button], button, .button, .more-link { font-weight: 700; }
+	
+	- Buttons Letter Spacing (input:range - min:0 - max: 10 - steps:1)
+		default 	: 1
+		css			: input[type=submit], input[type=button], button, .button, .more-link { letter-spacing: 1px; }
+		
+		
+	- Blog List Title Font Size (input:number - min:10 - max: 120 - steps:2)
+		default 	: 34
+		css			: @media screen and (min-width: 991px) { .blog-regular .post .entry-title { font-size: 34px; } }
+	
+    
+------------------------------------------	
+	
+	
+	
+	
+	
+	
+
+--------------------- Customizer > Colors
+
+
+	- Body Text Color (input:colorpicker)
+		default 	: #605561
+		css			: body { color: #605561; }
+
+	- Headings Text Color (input:colorpicker)
+		default 	: #323232
+		css			: h1, h2, h3, h4, h5, h6, blockquote { color: #323232; }
+
+	- Link Color (input:colorpicker)
+		default 	: #1851f1
+		css			: a { color: #1851f1; }
+
+
+	- Link Hover Color (input:colorpicker)
+		default 	: #2c00ff
+		css			: see below
+
+a:hover {
+ 	color: #2c00ff;
+	}
+.cool-link {
+	background-image: linear-gradient(transparent 88%, #2c00ff 12%);
+	}	
+	
+
+	- Primary Color (input:colorpicker)	
+		default 	: #1851f1
+		css			: see below
+	
+/* PRIMARY COLOR : #1851f1 */
+.button:after,
+input[type=submit]:hover, 
+input[type=button]:hover, 
+.more-link:after,
+button:hover, 
+.pagination a:hover,
+.navigation a:hover,
+.event:nth-of-type(2):after,
+.elementor-widget:nth-of-type(2) .event:after,
+.portfolio-nav a:hover,
+.skill-unit .bar .progress,
+#nprogress .bar,
+.media-date,
+.cool-link:after,
+.home-menu .item-name::before,
+.home-menu .item-name::after,
+.overlay-2,
+.mfp-bg  {
+ 	background-color: #1851f1;
+	}
+*::-webkit-scrollbar-thumb {
+	background-color: #1851f1;
+	}
+.bypostauthor > article,
+.event h3,
+input:not([type=submit]):not([type=button]):not([type=file]):not([type=radio]):not([type=checkbox]):focus, 
+textarea:focus, 
+input:focus, 
+select:focus,
+.tabs .tab-titles li a.active,
+input[type=submit], 
+input[type=button], 
+button, 
+.button,
+.more-link,
+.navigation a {
+	border-color: #1851f1
+	}
+.event h3,
+.entry-title a:hover,
+input[type=submit], 
+input[type=button], 
+button, 
+.button,
+.more-link,
+.navigation a,
+.filters .current .cool-link {
+	color: #1851f1
+	}
+#nprogress .spinner-icon {
+  	border-top-color: #1851f1; border-left-color: #1851f1;
+	}
+	
+
+------------------------------------------
+
+
+
+
+
+		
+
+
+
+--------------------- Customizer > Home 
+
+	- Home Title Font (dropdown Google Fonts List) 
+		default 	: Jost*
+		css			: 
+
+.home-logo-center,
+.home-logo-left,
+.home-logo-right {
+	font-family: 'Jost*', sans-serif;
+	}
+
+	- Home Title Font Weight (dropdown: 100-900)
+		default 	: 500
+		css			: 
+.home-logo-center,
+.home-logo-left,
+.home-logo-right {
+	font-weight: 500;
+	}
+
+	- Home Title BG Color (input:colorpicker)
+		default 	: #030303
+		css			: .home-text-container { color: #030303; }
+
+
+
+	- Home Menu Font (dropdown Google Fonts List)
+		default 	: Anton
+		css			: .home-menu { font-family: 'Anton', sans-serif; }
+
+	- Home Menu Font Weight (dropdown: 100-900)
+		default 	: 400
+		css			: .home-menu .item-name { font-weight: 400; }
+
+
+	- Home Image Mask Color  (input:colorpicker)
+		default	    : #000
+		css			: .home-bg:after, .header:before { background: #000; }
+		
+	- Home Image Mask Opacity  (input:range - min:0 - max: 1 - steps:0.1)
+		default	    : 0
+		css			: .home-bg:after, .header:before { opacity: 0.X; }
+
+
+
+	- Grid Title Font Size px (input:number - min:10 - max: 30 - steps:1)
+		default 	: 19
+		css			: @media screen and (min-width: 768px) { .media-grid h3 { font-size: 19px; } }
+	
+	- Grid Title Font Weight (dropdown : 100-900)
+		default 	: 500
+		css			: .media-grid h3 { font-weight: 500; }
+	
+	- Grid Title Text Transform (dropdown : None / Uppercase)
+		default 	: None
+		none-css	: .media-grid h3 { text-transform: none; }
+		uppercase-css	: .media-grid h3 { text-transform: uppercase; }
+		
+	- Grid Title Letter Spacing (input:range - min:0 - max: 10 - steps:1)
+		default 	: 0
+		css			: .media-grid h3 { letter-spacing: 0px; }	
+	
+		
+------------------------------------------
+</pre>
+
+          </div>
+          <!-- CUSTOM CSS
+            ================================================== -->
+
+          <!-- FONTS
+            ================================================== -->
+          <div id="fonts" class="sub-section">
+            <div class="page-header">
+              <h2>Fonts</h2>
+            </div>
+            <h3>Fonts by <a target="_new" href="http://www.google.com/webfonts">Google Webfonts</a></h3>
+            <p>We included some fonts in this template from <a target="_blank"
+                href="http://www.google.com/webfonts">Google Webfonts</a> which uses font-face technique for font
+              embeeding.</p>
+            <p>Font declerations are at the head section;</p>
+            <pre class="prettyprint linenums">&lt;!-- FONTS --&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css?family=Anton&quot; rel=&quot;stylesheet&quot;&gt;
+</pre>
+            <h3>Changing Fonts</h3>
+            <p>To change fonts, just go to <a target="_new" href="http://www.google.com/webfonts">Google Webfonts</a>
+              site, search and select a new font, click <b>"Quick use"</b> link, then copy the stylesheet code from <b>
+                Add this code to your website: / Standart</b> section and paste the code into <code>head</code> section.
+              Then change the font family name in <b>main.css</b> starting from <b>line:65</b>. These font definitions
+              in main.css are the only font definitions for the entire theme, once you have changed font-family in these
+              lines, you are done!</p>
+            <pre class="prettyprint linenums">
+/* ----- 1.2 FONTS ----- */ 
+/* BODY */
+body,
+input,
+textarea,
+select,
+input[type=file] {
+	font-family: 'Jost*', sans-serif;
+	}
+
+/* HEADING 1 */
+h1,
+.entry-title {
+	font-family: 'Jost*', sans-serif;
+	}
+
+/* HOME TITLE */
+.home-logo-center,
+.home-logo-left,
+.home-logo-right {
+	font-family: 'Jost*', sans-serif;
+	}
+
+/* HOME MENU */
+.home-menu {
+	font-family: 'Anton', sans-serif;
+	}
+	
+/* HEADINGS */
+h2,
+h3,
+h4,
+h5,
+h6,
+.filters,
+.nav-menu,
+.card-nav,
+th,
+dt,
+.button,
+.catlinks a,
+input[type=submit],
+button,
+label,
+.tab-titles,
+.more-link,
+blockquote {
+ 	font-family: 'Jost*';
+	}
+</pre>
+          </div>
+          <!-- FONTS
+            ================================================== -->
+
+        </section>
+        <!-- CUSTOMIZATION
+        ================================================== -->
+
+        <!-- CREDITS
+        ================================================== -->
+        <section id="credits">
+          <div class="page-header">
+            <h1>Credits<small>thanks to the creators of this great files</small></h1>
+          </div>
+          <pre class="prettyprint linenums">
+ CREDITS
+- thanks to the authors of this beautiful resources
+
+
+
+CSS3 Marquee 
+https://codepen.io/jonathansampson/pen/qyxdB
+
+JS Detect iOS
+https://codepen.io/niggi/pen/DtIfy
+
+Home Icon
+https://www.flaticon.com/packs/design-thinking
+https://www.flaticon.com/family/meticulous/lineal
+
+Menu Hover Effect
+https://tympanus.net/Development/MenuHoverEffects/dustu.html
+
+Page Reveal Effect Inspiration
+https://tympanus.net/Tutorials/PageRevealEffects/
+https://tympanus.net/Development/BlockRevealers/form.html
+
+Close Icon
+https://codepen.io/rsbear/pen/ZpXJVp
+
+Loader #6
+https://codepen.io/Paolo-Duzioni/pen/ZoRabJ
+
+Home Image Duotone Effect
+https://duotone.shapefactory.co/?f=ff7a6f&t=1c1c61&q=man
+
+Play Music Animation
+https://codepen.io/Wujek_Greg/pen/EpJwaj
+
+Silence sound
+http://www.minidisc.org/charman/downloads.html
+
+Chrome Audio Autoplay Fix with iframe
+https://stackoverflow.com/questions/50490304/how-to-make-audio-autoplay-on-chrome
+
+Youtube Music - Mood : Funky
+https://www.youtube.com/audiolibrary/music
+Music1 : Ticker
+Music2 : Toe Jam
+Music 3 : Digital Solitude
+
+Multiline Link Hover Animation
+https://codepen.io/christiancroser/pen/xqrLBm
+
+Fullscreen Toggle code
+https://codepen.io/jacobgDK/pen/azOXdY
+
+Online Audio Converter for reducing file sizes of bg music => 128kbps 
+https://online-audio-converter.com/tr/
+
+
+PORTFOLIO IMAGES
+https://www.behance.net/gallery/57704083/Portraits-06
+
+
+Sound Effects
+https://freesound.org/people/qubodup/sounds/60000/
+https://freesound.org/people/domingus/sounds/54001/
+
+
+Resume Icons
+https://www.iconfinder.com/iconsets/education-free
+
+Contact Icons
+http://www.streamlineicons.com/free-icons.html
+
+Single Page Menu Icons
+https://feathericons.com/
+
+nProgress
+http://ricostacruz.com/nprogress/
+
+PL Intro Animation
+https://codepen.io/karlovidek/full/JvrZBG
+
+Isotope
+http://isotope.metafizzy.co/
+        </pre>
+
+          <p class="lead">Yep, that's the end of the file, thanks for reading!</p>
+
+          <p>see you on another template ;)</p>
+
+        </section>
+        <!-- CREDITS
+        ================================================== -->
+
+      </div>
+      <!-- CONTENT -->
+    </div>
+    <!-- ROW -->
+  </div>
+  <!-- CONTAINER -->
+
+  <!-- Footer
+    ================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span12">
+          <p><a href="#overview">↑ Back to top</a></p>
+          <ul class="footer-links">
+            <li><a href="http://www.pixelwars.org/forums/" target="_blank">Support Forums</a></li>
+            <li><a href="http://themeforest.net/user/pixelwars/portfolio" target="_blank">More themes from pixelwars</a>
+            </li>
+          </ul>
+          <p>built with <a href="http://twitter.github.com/bootstrap/" target="_blank">twitter bootstrap</a>.</p>
+          <p>&copy;2019 Pixelwars</p>
+          <p><img src="assets/img/pixelwars-logo.png" alt="pixelwars logo"></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer
+    ================================================== -->
+
+  <!-- javascript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/google-code-prettify/prettify.js"></script>
+  <script src="assets/js/bootstrap-scrollspy.js"></script>
+  <script src="assets/js/bootstrap-affix.js"></script>
+  <script src="assets/js/application.js"></script>
+</body>
+
+</html>

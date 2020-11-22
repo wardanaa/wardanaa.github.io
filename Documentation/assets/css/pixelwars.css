@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:500');
+
+/* Text Selection */
+::selection { text-shadow:none; color:#333; background:#FFFFC5; }
+::-moz-selection { text-shadow:none; color:#333; background:#e9eeff; }
+
+a { color: inherit; text-decoration: underline; transition: all .2s ease-in-out; }
+a:hover { color: #000; background: #e7edf7; }
+
+body { padding-top: 0; font-size: 16px; line-height:170%; font-family: Monaco, Menlo, Consolas, "Courier New", monospace; color: #444; }
+.jumbotron h1 { font-family: Georgia, serif; font-weight:400 !important; }
+h1 { font-size: calc(20px + 2.2vw);  }
+h1, h2, h3, h4, h5, h6 { font-family: 'Rubik', sans-serif; font-weight: 500; color: #333; }
+h2 { font-size: 27px; }
+h3 { font-size: 18px; margin: 24px 0 8px 0; }
+h4 {margin: 2em 0 1em 0;font-size: 16px;}
+ul,ol { padding-left: 35px; margin-bottom: 20px; }
+li { line-height: 27px; margin-bottom: 10px; word-break: break-word; }
+p { margin-bottom: 18px; }
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner, .jumbotron, 
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus,
+.bs-docs-sidenav,
+.bs-docs-sidenav > .active > a { 
+-webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner { border:0; }
+.navbar .nav > li > a { padding-top:20px; }
+body > .navbar .brand { margin-top:11px; font-size:14px; }
+.navbar-inner { background: rgba(255, 255, 255, 0.9); }
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus { background:whiteSmoke; border-bottom:3px solid #FC3; }
+
+.subhead h1 { font-size: calc( 26px + 6.4vw); text-shadow:none; }
+.jumbotron { color: #222; text-shadow: 0 1px 0px rgba(255,255,255,.8); background:none; border:0; filter:none; }
+.jumbotron p {font-size: 16px;opacity: .4;}
+
+
+
+section > .page-header,
+section > .lead {
+  color: #333;
+}
+.page-header {
+    border-bottom: 7px solid #333;
+	}
+.page-header h1 {
+    margin-bottom: -11px;
+	}
+.row-fluid .page-header {
+	border-bottom : 0;
+	}
+.page-header h2,
+.page-header h3 {
+    margin-bottom: -5px;
+	}
+	
+section > ul li {
+    margin-bottom: 14px;
+	}
+
+.alert {border: 0;padding: calc(4px + 0.6vw) calc(4px + 1.6vw); color:inherit; font-size: 15px; display: inline-block; }
+
+
+/* code and pre  */
+code,
+pre {
+ 	padding: 0 3px 2px; margin-bottom: 4em; font-family: Monaco, Menlo, Consolas, "Courier New", monospace; font-size: 12px; color: #333333; white-space: pre-wrap; overflow: auto;  word-break: normal !important; word-wrap: normal !important; white-space: pre !important }
+code {
+ 	margin: 0 .4em; font-size: 14px; padding: 1px 6px; background: #fff; border: 1px solid #DDE4E6; box-shadow: 1px 1px 0 #fff, 2px 2px 0 #DDE4E6;
+	}
+pre.prettyprint { font-size: 13px; margin-bottom: 50px; max-height: 500px; }
+pre.prettyprint.linenums { font-size: 12px; box-shadow: inset 0 1px 0 #fff, 1px 1px 0 #fff, 2px 2px 0 #ddd, 3px 3px 0 #fff, 4px 4px 0 #ddd; }
+pre.prettyprint.linenums ol {
+	background-image: linear-gradient(#f5f5f5 .1em, transparent .1em);
+    background-size: 100% 1.64em;
+}
+pre.prettyprint li { margin-bottom: 0; }
+/* FOOTER */
+.footer {text-align:center;background: #fff;border-top: none; background: #000;color: #ddd;font-size: 14px;}
+.footer p { margin-bottom:10px; }
+
+/* TYPOGRAPHY */
+ul { list-style:square; }
+.lead { font-size:18px; }
+blockquote .lead { margin-bottom:14px; }
+.sub-section { padding-top: 40px; }
+.sub-section .page-header { padding-bottom:0; margin-top: 0; border-bottom: 4px solid #333; }
+.highlight { background: #333; color: #fff; padding: 0 5px; }
+h1 .highlight { }
+h1 small, h2 small  { font-size: 15px; margin-left: 20px; font-weight: 400; letter-spacing: 0; font-family: Monaco, Menlo, Consolas, "Courier New", monospace; vertical-align: middle; }
+.jumbotron h1 small { 
+	display: inline-block;
+    padding: 4px 12px;
+    border: 2px solid #333;
+    opacity: 1;
+    color: inherit;
+    vertical-align: top;
+}
+
+
+/* SIDE NAV */
+.bs-docs-sidebar { font-family: Monaco, Menlo, Consolas, "Courier New", monospace; font-weight: 400; text-transform: uppercase; font-size: 13px; letter-spacing: 1px; }
+.bs-docs-sidenav li { margin-bottom: 14px; line-height: 1; }
+.bs-docs-sidenav li li { margin-bottom: 10px; }
+.bs-docs-sidenav li:last-child { margin-bottom: 0; } 
+.bs-docs-sidenav > li > a { margin:4px 0; padding: 0 0 0 10px; transition: color .2s ease-in; text-decoration: none; }
+.nav-list > .active > a, .nav-list > .active > a:hover, .nav-list a:hover {background:none;color: #333;text-shadow:none;}
+/*.nav-list > .active ul a:hover, .nav-list ul a:hover, .nav-list > .active .active > a { color:#333; }*/
+.affix .affix { position:static; }
+.bs-docs-sidenav > li a {color: #aaa;font-size:15px;border:0;}
+.bs-docs-sidenav > .active > a {padding: 0 0 0 10px;border-left: 7px solid #333;margin-left: -7px; font-weight: bold; border-radius: 0 !important;}
+.nav-list > li > a:hover { background:none; }
+.nav-list > li > ul > li > a { padding: 1px 5px 1px 24px; font-size: 13px; text-decoration: none; }
+.nav-list > li > ul > li.active > a { font-weight: bold;}
+.bs-docs-sidenav > li:first-child > a { 
+  -webkit-border-radius: 0;
+          border-radius: 0; }
+
+
+section {
+  padding-top: 80px;
+  margin-bottom:60px;
+}
+.bs-docs-sidenav { margin-top:100px; background:none; }
+.bs-docs-sidenav.affix { top:0px; margin-top:80px; }
+.bs-docs-sidenav ul { display:none; }
+.bs-docs-sidenav li.active ul { display:block; }
+.jumbotron { padding: 60px 20px 20px 20px; }
+
+.nav-list ul { max-width: 180px; padding:10px 0px 8px 14px }
+
+
+.label, .badge { font-size:14px; }
+
+/* Side Nav */
+
+@media screen and (max-width:480px) { 
+	.subhead h1 { font-size:40px; }
+}
+
+@media screen and (max-height:680px) { 
+	.bs-docs-sidenav { max-height: 80%; overflow: auto; }
+}
+
+/* BUTTONS - made minimal */
+
+.btn {
+	font-family: Monaco, Menlo, Consolas, "Courier New", monospace; font-weight: bold; text-transform: uppercase; font-size: 13px; letter-spacing: 1px; text-decoration: none;
+	background: #fff; text-shadow: none; box-shadow: none; border-radius: 0; border: 3px solid #333; transition: all 0.1s ease-out;
+	}
+.btn-success {
+	color: #62c462; border-color: #62c462;	
+	}
+.btn:hover {
+	background: #111; color: #fff; border-color: transparent;
+	}
+.btn-success:hover {
+	background: #62c462; color: #fff; border-color: transparent;
+	}
+.btn-large {
+	padding: 16px 30px;
+	}
